@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Leaf detection</title>
+	<meta charset="UTF-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+    	<style>
+		body{
+			margin:0px;
+			background-color:#f5f5f7;
+		}
+
+		header{
+			text-align: center;
+		}
+		footer{
+			background-color: #16252d;
+			color: white;
+			display: flex;
+			justify-content: space-between;
+			position: fixed;
+			top:44rem;
+			width:1600px;
+			text-align:center;
+		}
+		nav{
+			position: fixed;
+			top:34rem;
+			margin-left:1450px;
+		}
+
+		
+	</style>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<script src="https://use.fontawesome.com/bdf76b0283.js"></script>
+	<link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/1147/1147560.png">
+  </head>
+  <body>
+   <header id="head">	
+		<h1 style="font-size: 60px; color: #074e2e"><img src="https://cdn-icons-png.flaticon.com/512/1147/1147560.png" alt="leaf" width="60px"> Leaf Disease Detection</h1>
+
+      
+      <p style="font-size: 25px;">Just upload leaf image and get predictions if plant is infected or not</p>
+		<br>
+
+      <form action="" method="POST" enctype="multipart/form-data">
+         {% csrf_token %}         
+		   <input type="file" id="myfile" name="myfile" accept="image/jpeg" onchange="loadFile(event);" required style="font-size: 20px; margin-left:60px"><br/><br/>
+		   <button name="Predict" type="submit" style="font-size: 20px;" id="button_predict">Predict</button>
+		</form>
+
+   </header>
+
+   <nav>
+	<a href="/help" style="margin-right:15px;"><img src="https://cdn-icons.flaticon.com/png/512/1048/premium/1048136.png?token=exp=1656059745~hmac=0b462be60f613dddbb7e57e7a2fff097" height=55 width=55></a><br><br>
+	<a href="mailto:shrutikamamdyal456@gmail.com"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" height=50 width=50></a>
+   </nav>
+
+   <footer>
+	<div style="margin-left: 470px; font-size:24px; padding:15px">
+		© Copyright 2022 Leaf Disease Detection. All Rights Reserved.
+	</div>
+</footer>
+  </body>
+    <script src="https://apis.google.com/js/api.js?onload=onApiLoad"></script>
+</html>
