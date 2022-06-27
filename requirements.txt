@@ -1,0 +1,12 @@
+tensorflow: 2.9.1
+Python 3.7–3.10
+numpy
+django
+cv2
+
+NVIDIA software are only required for GPU support.
+
+NVIDIA GPU drivers version 450.80.02 or higher.
+CUDA Toolkit 11.2.
+cuDNN SDK 8.1.0.
+
