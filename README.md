@@ -4,3 +4,5 @@
  Dataset downloaded from : https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset
  
  Model Training Colab Notebook : https://colab.research.google.com/drive/11dRpBTfCJ2hfd0AWW7rPtnor3SqNiPjV?usp=sharing
+ 
+ Model Loading Colab Notebook : https://colab.research.google.com/drive/1eH6nOiKa4TgKS4ySVxwXzGuqBGftZscF?usp=sharing
